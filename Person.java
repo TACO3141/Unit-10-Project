@@ -1,3 +1,3 @@
-class Person
+public class Person
 {
 }
