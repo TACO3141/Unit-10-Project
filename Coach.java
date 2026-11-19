@@ -10,6 +10,6 @@ public class Coach
 
   public String toString()
   {
-    System.out.println()
+    
   }
 }
