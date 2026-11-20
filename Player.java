@@ -3,8 +3,11 @@ public class Player
   private int jerseyNumber;
   private String position;
   private static int jnc = 0;
+  private static int goals;
+  private static int saves;
+  private static int assists;
 
-  public Player(String firstName, String lastName, String position)
+  public Player(String firstName, String lastName, String position, int goals, int saves, int assists)
   {
     super(firstName, lastName);
     if (position.equalsIgnoreCase("forward"))
@@ -15,12 +18,17 @@ public class Player
     {
       this.position = position;
     }
+    else if (position.equalsIgnoreCase("goalie"))
+    {
+      this.position = position;
+    }
     else
     {
-      this.position = "goalie";
+      this.position = "unknown";
     }
     jnc++;
     jerseyNumber = jnc;
+    
   }
 
   public String getPosition()
