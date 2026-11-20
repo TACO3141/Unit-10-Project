@@ -28,7 +28,9 @@ public class Player
     }
     jnc++;
     jerseyNumber = jnc;
-    
+    this.goals = goals;
+    this.assists = assists;
+    this.saves = saves;
   }
 
   public String getPosition()
@@ -36,10 +38,11 @@ public class Player
     return position;
   }
 
+  pu
   public String toString()
   {
     String toReturn = "";
-    toReturn = toReturn + lastName + ", " + firstName + "\n   Jersey #: " + jerseyNumber + "\n   Position: " + position;
+    toReturn = toReturn + lastName + ", " + firstName + "\n   Jersey #: " + jerseyNumber + "\n   Position: " + position + "\n   Goals\\Saves\\Assists: " + goals + "\\" + saves + "\\" + assists;
     return toReturn;
   }
 }
