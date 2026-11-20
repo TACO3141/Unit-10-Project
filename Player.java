@@ -37,8 +37,7 @@ public class Player
   {
     return position;
   }
-
-  pu
+  
   public String toString()
   {
     String toReturn = "";
