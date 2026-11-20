@@ -10,6 +10,8 @@ public class Coach
 
   public String toString()
   {
-    
+    String toReturn = "";
+    toReturn = toReturn + lastName + ", " + firstName + "\n   Role: " + role;
+    return toReturn;
   }
 }
